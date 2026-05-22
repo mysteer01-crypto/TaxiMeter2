@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/bg_dark"/>
+    <foreground>
+        <inset xmlns:android="http://schemas.android.com/apk/res/android" android:inset="18%">
+            <vector android:width="108dp" android:height="108dp"
+                android:viewportWidth="108" android:viewportHeight="108">
+                <path android:fillColor="#4FACFE"
+                    android:pathData="M54,12 C31,12 12,31 12,54 C12,77 31,96 54,96 C77,96 96,77 96,54 C96,31 77,12 54,12z"/>
+                <path android:fillColor="#FFFFFF"
+                    android:pathData="M36,58 L36,52 C36,46 39,42 44,40 L50,34 L58,34 L64,40 C69,42 72,46 72,52 L72,58 Z"/>
+                <rect android:fillColor="#FFFFFF" android:x="32" android:y="60" android:width="44" android:height="10" android:rx="3"/>
+                <circle android:fillColor="#0D1117" android:cx="42" android:cy="69" android:r="5"/>
+                <circle android:fillColor="#0D1117" android:cx="66" android:cy="69" android:r="5"/>
+            </vector>
+        </inset>
+    </foreground>
+</adaptive-icon>

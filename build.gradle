@@ -1,0 +1,17 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://repo.yandex.ru/yandex-apps/android/' }
+        mavenCentral()
+    }
+    dependencies {
+        // Подключаем сам плагин сборщика
+        classpath 'com.android.tools.build:gradle:8.2.0'
+    }
+}
+
+// Блок allprojects полностью удален, так как им теперь управляет settings.gradle
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,2 @@
+-keep class com.taximeter.app.** { *; }
+-keep class com.google.gson.** { *; }
