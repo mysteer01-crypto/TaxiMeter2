@@ -1,33 +1,5 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.artem.taximeter'
-
-    // Вручную жестко привязываем к твоей установленной Baklava
-    compileSdk 36
-    buildToolsVersion "36.1.0"
-
-    defaultConfig {
-        applicationId "com.artem.taximeter"
-        minSdk 24
-        targetSdk 36
-        versionCode 1
-        versionName "2.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
-dependencies {
-    // Оставляем только базовые локальные файлы проекта, без запросов к серверам Google
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    id 'com.android.application' version '8.2.0' apply false
+    id 'com.android.library' version '8.2.0' apply false
 }
